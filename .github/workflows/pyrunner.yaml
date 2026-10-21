@@ -17,5 +17,4 @@ jobs:
           python-version: "3.x"
 
       - name: execute
-        run: python scripts/execution_info.python
-        
+        run: python scripts/execution_info.py
