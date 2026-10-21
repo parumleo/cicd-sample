@@ -1,0 +1,21 @@
+name: manual execution Info
+on:
+  workflow_dispatch:
+
+jobs:
+  display-execution-info:
+    name: Display Execution Details
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v4
+
+      - name: setup python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: execute
+        run: python scripts/execution_info.python
+        
