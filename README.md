@@ -1,2 +1,0 @@
-# cicd-sample
-cicd-sample
