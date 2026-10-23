@@ -1,0 +1,25 @@
+name: Push Trigger Workflow
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - '.github/**'
+
+jobs:
+  display-execution-info:
+    name: Display Execution details
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Execute
+        run: python scripts/execution_info.py
+        
