@@ -11,7 +11,7 @@ on:
           - tst
           - prod
       message:
-        requiured: true
+        required: true
         type: string
         default: "deployment from github"
 
@@ -33,4 +33,4 @@ jobs:
         env:
           TARGET_ENV: ${{inputs.environment}}
           CUSTOM_MESSAGE: ${{inputs.message}}
-        run: python scripts/execution_ino.py
+        run: python scripts/execution_info.py
