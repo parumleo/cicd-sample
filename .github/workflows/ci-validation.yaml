@@ -7,7 +7,7 @@ on:
     branches:
       - main
 
-permisssions:
+permissions:
   contents: read
 
 jobs:
