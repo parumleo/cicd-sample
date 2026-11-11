@@ -48,3 +48,4 @@ python -m pytest -v
 The workflow runs on pushes to `main` and pull requests targeting `main`.
 
 test
+test2
